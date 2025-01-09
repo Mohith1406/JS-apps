@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task List</title>
+    <style>
+        /* Page styling */
+        body {
+            background-color: #1a1a1a;
+            color: white;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            font-size:larger;
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+            height:fit-content;
+        }
+
+        /* Section container styling */
+        section {
+            background-color: #333;
+            padding: 20px;
+            border-radius: 8px;
+            width: 300px; 
+           position: absolute;
+           top:50%;
+           left:50%;
+           transform: translate(-50%,-50%);
+        }
+
+
+        /* Input styling */
+        input[type="text"] {
+            /* width: 100%; */
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #555;
+            border-radius: 4px;
+            color: #1a1a1a;
+        }
+
+        /* Button styling */
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        
+        /* button:hover {
+            background-color: #45a049;
+        } */
+
+        /* Task list styling */
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        /* Task item styling */
+        li {
+            background-color: #444;
+            color: white;
+            padding: 10px;
+            border-radius: 4px;
+            margin-bottom: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Remove button within tasks */
+        li button {
+            background-color: #ff4d4d;
+            border: none;
+            padding: 5px 10px;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        /* Highlight class for special items */
+        .high {
+            background-color: yellow;
+            font-weight: bold;
+            color: #1a1a1a;
+        }
+        .completed{
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <label for="fname">Tasks</label><br>
+        <input type="text" id="fname" name="fname" placeholder="Enter a new task">
+        <button id="ab">Add</button>
+        <ul id="tasks">
+            <!-- Task items will appear here -->
+        </ul>
+    </section>
+    <script src="./todo.js"></script>
+</body>
+</html>
