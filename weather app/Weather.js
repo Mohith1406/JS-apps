@@ -1,9 +1,10 @@
+import {API_Key}  from "./constant.js";
+
 document.addEventListener("DOMContentLoaded", () => {
   const city_input = document.getElementById("city-input");
   const bt = document.getElementById("bt");
   const wi = document.getElementById("wi");
   const er = document.getElementById("er");
-  const API_Key = "API_KEY";
 
   bt.addEventListener("click", async () => {
     const city = city_input.value.trim();
